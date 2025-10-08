@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suggestions</title>
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #2c2c2c, #57534D), url("images/suggestions.png") no-repeat center center;
+      background-size: cover;
+      color: #FAFAFA;
+      padding: 20px;
+    }
+
+    main {
+      background: rgba(30, 30, 30, 0.85);
+      padding: 40px 20px;
+      max-width: 700px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      text-align: center;
+      color: orange;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    form {
+      background-color: #79716B;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #3a3a3a;
+      color: #FAFAFA;
+      font-size: 16px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      width: 120px;
+      margin: 10px;
+      background-color: orange;
+      color: #1e1e1e;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #e6a100;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: orange;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #e6a100;
+    }
+
+    footer {
+      background: #222;
+      color: #f9a825;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      input, select, textarea {
+        font-size: 14px;
+      }
+
+      input[type="submit"], input[type="reset"] {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h2>Contact Us</h2>
+    <p>Fill out the form below to share your suggestions or report issues</p>
+
+    <form action="mailto:youremail@example.com" method="post">
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" placeholder="Enter your name" required /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" placeholder="dealbreaker@gmail.com" required /></td>
+        </tr>
+        <tr>
+          <td><label for="report">Reason:</label></td>
+          <td>
+            <select id="report" name="report" required>
+              <option value="">Why do you want to contact us?</option>
+              <option value="bug">Bug report</option>
+              <option value="offensive">Offensive content</option>
+              <option value="scam">Scam links</option>
+              <option value="other">Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="message">Your Message:</label></td>
+          <td><textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center;">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <a href="MAIN.html">← Back to Home</a>
+  </main>
+
+  <footer>
+    &copy; 2025 DEAL BREAKER | All rights reserved.
+  </footer>
+
+</body>
+</html>
